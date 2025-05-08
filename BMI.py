@@ -1,4 +1,6 @@
-def calculate_bmi(height, weight): 
+def calculate_bmi():
+ height = float(input("Enter height in meters: "))
+ weight = float(input("Enter weight in kilograms: ")) 
  print("Height = " + str(height)) 
  print("Weight = " + str(weight)) 
  BMI=weight / (height * height)
@@ -12,5 +14,3 @@ def calculate_bmi(height, weight):
  elif BMI > 25:
     print("Overweight")
     return 1
-   
-calculate_bmi(weight=57, height=1.73)
